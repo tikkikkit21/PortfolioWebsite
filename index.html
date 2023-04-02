@@ -5,17 +5,26 @@
         <meta name="description" content="WebPage assignment for ENGL3844">
         <title>Timothy (Tikki) Cui</title>
         <link rel="stylesheet" href="./index.css">
+        <script>
+            function jumpTo(sectionName) {
+                document.getElementById(sectionName).scrollIntoView();
+            }
+        </script>
     </head>
     <body>
 <!--
         <header>
             <nav class="tabs">
-                <button onclick="document.getElementById('skills').scrollIntoView({smooth: true});">About Me</button>
+                <button onclick="jumpTo('about')">About Me</button>
+                <button onclick="jumpTo('experience')">Experience</button>
+                <button onclick="jumpTo('skills')">Skills</button>
+                <button onclick="jumpTo('contact')">Contact Me</button>
             </nav>
         </header>
 -->
         
-        <h2 id="about">About Me</h2>
+        <main>
+        <h1 id="about">About Me</h1>
         <article>
             <div class="aboutme">
                 <img src="./images/professional.jpg" width="400" height="400" alt="My professional headshot" title="Me" class="aboutme">
@@ -31,29 +40,29 @@
             <p class="content">Today, I'm pursuing that passion. I'm currently a second-year at Virginia Tech, pursuing a Bachelor's of Science in Computer Science. While I enjoy backend development the most, I aim to be a well-rounded programmer. That's why for my undergraduate, I'm taking electives like Cloud Software Dev, Mobile Dev, Graphics, and Web Dev. After graduation, I plan to pursue a Master's of Engineering in CS, where I'll be focusing on Artificial Intelligence and Data Analytics. From there, I would like to pursue a career in autonomy with vechicles and/or robotics.</p>
         </article>
         
-        <h2 id="experience">Experience</h2>
+        <h1 id="experience">Experience</h1>
         <article>
-            <h3 class="experience">Professional</h3>
-            <h4 class="experience">Exelaration Software Center | May - Aug 2023</h4>
+            <h2 class="experience">Professional</h2>
+            <h3 class="experience">Exelaration Software Center | May - Aug 2023</h3>
             <p class="content">I'll be interning at the <a href="https://exelaration.com/" target="_blank">Exelaration Software Center</a> this summer. This will be my first college-level internship and I'm greatly looking forward to it!</p>
-            <h4 class="experience">Iowa Children's Museum | June - July 2022</h4>
+            <h3 class="experience">Iowa Children's Museum | June - July 2022</h3>
             <p class="content">My overall objective was to enhance the visiting childrens'  learning experiences. I did this by interacting with them and stimulating their imagination with open-ended questions. I also helped to ensure the museum remained clean and sanitary by performing janitorial duties and exhibit maintenance.</p>
-            <h4 class="experience">Iowa City Mathnasium | May - Aug 2021</h4>
+            <h3 class="experience">Iowa City Mathnasium | May - Aug 2021</h3>
             <p class="content">As a Mathnasium tutor, I helped out students from a variety of math skills, ranging from 1st grade to Calculus. Each student had their own customized study plan that targeted their weak areas. Whenever a student completed a worksheet, I would go over the incorrect answers and ensure they understood what they missed.</p>
-            <h4 class="experience">National Advanced Driving Simulator | July 2019</h4>
+            <h3 class="experience">National Advanced Driving Simulator | July 2019</h3>
             <p class="content">My first internship involved taking raw simulator data and "reducing" it to human-friendly spreadsheets. I started off by learning MATLAB, a completely new language to me. After grasping the basics of the language, I helped to complete data reduction code for several different driving studies, guided by the study documentation.</p>
-            <h3 class="experience">Extracurricular</h3>
-            <h4 class="experience">RoboMaster Robotics | Sept 2022 - Present</h4>
+            <h2 class="experience">Extracurricular</h2>
+            <h3 class="experience">RoboMaster Robotics | Sept 2022 - Present</h3>
             <p class="content">I'm currently at Virginia Tech's RoboMaster robotics club, learning how to incorporate computer vision into robot autonomy. Specifically, I'm learning to use the Kalman Filter, SLAM, and OpenCV to develop an auto-aiming algorithm in C++</p>
-            <h4 class="experience">Discord Bot | Dec 2020 - Present</h4>
+            <h3 class="experience">Discord Bot | Dec 2020 - Present</h3>
             <p class="content">After being stuck indoors due to COVID and 100% virtual education, I had a lot of time on my hands. I ended up creating a Discord bot as a personal project. It was an amazing experience since many of the technology involved was completely new to me and had to be self-learned. I taught myself JavaScript to code the bot, while also learning the basics of Linux and MongoDB in order to host it. I also greatly improved my skills in Git and working with API documentation. Currently, the bot is 1,000+ Discord servers and serving 2,500+ users.</p>
-            <h4 class="experience">FTC Robotics | May 2021 - May 2022</h4>
+            <h3 class="experience">FTC Robotics | May 2021 - May 2022</h3>
             <p class="content">After gradutating from high school, I returned to my FTC (FIRST Tech Challenge) Robotics club as a virtual mentor. I helped out the programming team by guiding their ideas and offering improvement suggestions for their code. I also worked with the head coaches to figure out logistics and organize team meetings. The highlight of that year was when I returned to Iowa for Winter Break, just in time for their Regionals competition. It was great to meet the team in person and also help volunteer as a scorekeeper.</p>
         </article>
         
-        <h2 id="skills">Skills</h2>
+        <h1 id="skills">Skills</h1>
         <article>
-            <h3 class="skills">Languages</h3>
+            <h2 class="skills">Languages</h2>
             <ul>
                 <li>Java</li>
                 <li>JavaScript</li>
@@ -65,7 +74,7 @@
                 <li>R</li>
                 <li>HTML &amp; CSS</li>
             </ul>
-            <h3 class="skills">Tools</h3>
+            <h2 class="skills">Tools</h2>
             <ul>
                 <li>Git &amp; GitHub</li>
                 <li>Linux</li>
@@ -74,17 +83,13 @@
             </ul>
         </article>
         
-        <h2 id="contact">Contact Me</h2>
+        <h1 id="contact">Contact Me</h1>
         <article>
-            <p>View my <a href="https://www.linkedin.com/in/timothycui/">LinkedIn</a>!</p>
-            <p>View my <a href="Resume.pdf" target="_blank">resume</a>!</p>
-            <p>My email is <i><a href="mailto: ttcui@vt.edu">ttcui@vt.edu</a></i></p>
+            <p class="contact">View my <a href="https://www.linkedin.com/in/timothycui/" target="_blank">LinkedIn</a>!</p>
+            <p class="contact">View my <a href="Resume.pdf" target="_blank">resume</a>!</p>
+            <p class="contact">My email is <i><a href="mailto: ttcui@vt.edu">ttcui@vt.edu</a></i></p>
         </article>
         
-        <script>
-            function jumpTo(sectionName) {
-                document.getElementById(sectionName).scrollIntoView();
-            }
-        </script>
+        </main>
     </body>
 </html>

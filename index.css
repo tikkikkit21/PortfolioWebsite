@@ -1,8 +1,40 @@
-body {
+html {
     background: #1E1E1E;
     color: #FFF;
     font-family: Arial, sans-serif;
-    margin: 2% 10%;
+}
+
+/*
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #000;
+    margin: 0 !important;
+    padding: 1%;
+    padding-left: 5%;
+}
+*/
+
+main {
+    position: relative;
+    margin: 1% 5%;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    margin: 0.5% 0%;
+    color: #569CD6;
+}
+
+h2 {
+    font-family: "Courier New", monospace;
+    font-size: 2em;
+    margin: 0;
+    color: #C586C0;
 }
 
 p.content {
@@ -10,16 +42,9 @@ p.content {
     padding-left: 1.5%;
 }
 
-h2 {
-    font-family: "Courier New", monospace;
-    font-size: 3em;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-h3.experience {
-    text-transform: uppercase;
-    font-size: 1.5em;
+p.contact {
+    font-size: 2em;
+    margin: 0.5%;
 }
 
 div.aboutme {
@@ -32,10 +57,10 @@ div.aboutme {
 
 div.aboutme_code {
     font-family: "Consolas", monospace;
-    font-size: 3em;
+    font-size: 2.5em;
     width: auto;
     line-height: 1.25;
-    padding: 2.5%;
+    padding: 2%;
 }
 
 img.aboutme {
@@ -43,15 +68,34 @@ img.aboutme {
     padding: 2.5%;
 }
 
+ul {
+    margin: 0;
+}
+
 li {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 a {
-    color: deepskyblue;
+    color: #569CD6;
 }
 
 a:hover {
     color: aqua;
+}
+
+button {
+    background-color: #569CD6;
+    border: none;
+    color: black;
+    padding: 20px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
 }
 
