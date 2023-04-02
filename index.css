@@ -1,11 +1,49 @@
-html {
-    background: #141414;
+body {
+    background: #1E1E1E;
     color: #FFF;
+    font-family: Arial, sans-serif;
+    margin: 2% 10%;
 }
 
-/*
+p.content {
+    font-size: 1.2em;
+    padding-left: 1.5%;
+}
+
 h2 {
-    font-size: 2em;
-    align-content: center;
-    font-family: cursive;
-}*/
+    font-family: "Courier New", monospace;
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3.experience {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+div.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div.aboutme_code {
+    font-family: "Consolas", monospace;
+    font-size: 3em;
+    width: auto;
+    line-height: 1.25;
+    padding: 2.5%;
+}
+
+img.aboutme {
+    border-radius: 50%;
+    padding: 2.5%;
+}
+
+li {
+    font-size: 1.5em;
+}
+
